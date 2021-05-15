@@ -12,6 +12,10 @@ public class EnemyMovement : MonoBehaviour
 {
     private EnemyState state;
     private Rigidbody2D rb;
+    private Animator animator;
+
+    [SerializeField]
+    private int health = 10;
 
     [SerializeField]
     private float speed = 4f;
@@ -20,6 +24,7 @@ public class EnemyMovement : MonoBehaviour
     {
         state = EnemyState.Walk;
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -35,12 +40,18 @@ public class EnemyMovement : MonoBehaviour
         rb.velocity = new Vector2(-speed, rb.velocity.y); 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Die()
     {
-        if (collision.transform.tag == "ContactPoint")
+        animator.SetTrigger("destroy");
+        state = EnemyState.Destroy;
+    }
+
+    public void Hurt(int damage)
+    {
+        health -= damage;
+        if (health < 0)
         {
-            Debug.Log("Le pego al enemigo");
+            Die();
         }
-        
     }
 }
