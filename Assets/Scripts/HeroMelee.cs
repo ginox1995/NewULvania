@@ -6,10 +6,12 @@ using UnityEngine;
 public class HeroMelee : MonoBehaviour
 {
     private Animator animator;
+    private GameObject contactPoint;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
+        contactPoint = transform.Find("ContactPoint").gameObject;
     }
 
     private void Update()
@@ -24,5 +26,6 @@ public class HeroMelee : MonoBehaviour
     private void Attack()
     {
         animator.SetTrigger("attack");
+        contactPoint.SetActive(true);
     }
 }
