@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     Animator animmatorHero;
     SpriteRenderer srHero;
     CapsuleCollider2D colliderHero;
+    Transform contactPoint;
     //private bool isRunning = false;
     private float movement;
 
@@ -23,6 +24,7 @@ public class GameManager : MonoBehaviour
         animmatorHero = hero.GetComponent<Animator>();
         srHero = hero.GetComponent<SpriteRenderer>();
         colliderHero = hero.GetComponent<CapsuleCollider2D>();
+        contactPoint = hero.transform.Find("ContactPoint").transform;
     }
 
     // Update is called once per frame
@@ -33,10 +35,28 @@ public class GameManager : MonoBehaviour
         {
             srHero.flipX = true;
             animmatorHero.SetBool("isRunning", true);
-        }else if (movement > 0)
+            if (contactPoint.localPosition.x > 0f)
+            {
+                contactPoint.localPosition = new Vector3(
+                    contactPoint.localPosition.x * -1f,
+                    contactPoint.localPosition.y,
+                    contactPoint.localPosition.z
+                );
+            }
+            
+        }
+        else if (movement > 0)
         {
             srHero.flipX = false;
             animmatorHero.SetBool("isRunning", true);
+            if (contactPoint.localPosition.x < 0f)
+            {
+                contactPoint.localPosition = new Vector3(
+                    contactPoint.localPosition.x * -1f,
+                    contactPoint.localPosition.y,
+                    contactPoint.localPosition.z
+                );
+            }
         }
         else
         {
