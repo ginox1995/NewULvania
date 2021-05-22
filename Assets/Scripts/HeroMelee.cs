@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using ULVania.Enemy;
 
 public class HeroMelee : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class HeroMelee : MonoBehaviour
     [SerializeField]
     private int damage = 2;
 
+    public float rate = 1f;
+    private float counter = 0f;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -22,10 +26,11 @@ public class HeroMelee : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && Time.time > counter)
         {
             // Tenemos iniciar ataque
             Attack();
+            counter = Time.time + rate;
         }
     }
 
@@ -39,7 +44,7 @@ public class HeroMelee : MonoBehaviour
         {
             if (collider.tag == "Enemy")
             {
-                collider.GetComponent<EnemyMovement>().Hurt(damage);
+                collider.GetComponent<EnemyController>().Hurt(damage);
             }
         }
     }

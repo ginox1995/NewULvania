@@ -10,6 +10,10 @@ public class GameManager : MonoBehaviour
     public float fallMultiplier;
     public float lowJumpMultiplier;
 
+    public Transform spawnEnemyPosition;
+    public Transform checkSpawnEnemy;
+    public GameObject prefabEnemy;
+
     Rigidbody2D rbHero;
     Animator animmatorHero;
     SpriteRenderer srHero;
@@ -17,6 +21,8 @@ public class GameManager : MonoBehaviour
     Transform contactPoint;
     //private bool isRunning = false;
     private float movement;
+
+    private bool enemyInstantiated = false;
 
     void Start()
     {
@@ -30,6 +36,13 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (hero.transform.position.x > checkSpawnEnemy.position.x && !enemyInstantiated)
+        {
+            // Debemos spawnear un enemigo
+            Instantiate(prefabEnemy, spawnEnemyPosition.position, Quaternion.identity);
+            enemyInstantiated = true;
+        }
+
         movement = Input.GetAxisRaw("Horizontal");
         if (movement < 0)
         {

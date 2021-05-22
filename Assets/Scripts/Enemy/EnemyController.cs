@@ -8,6 +8,8 @@ namespace ULVania.Enemy
     {
         public float speed;
 
+        public int Health;
+
         private EnemyStateMachine fsm;
 
         // States
@@ -37,6 +39,15 @@ namespace ULVania.Enemy
         {
             fsm.GetCurrentState().OnHandleInput();
             fsm.GetCurrentState().OnLogicUpdate();
+        }
+
+        public void Hurt(int damage)
+        {
+            Health -= damage;
+            if (Health <= 0)
+            {
+                fsm.ChangeState(dyingState);
+            }
         }
     }
 
