@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using ULVania.Enemy;
+using NewULVania.Hero.TeleportPowerBar;
 
 public class HeroMelee : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class HeroMelee : MonoBehaviour
 
     private float rate = 0.5f;
     private float counter = 0f;
+    public Transform parentPowerBar;
+    public Transform powerBar;
+    public float powerBarGrowRate;
 
     private void Start()
     {
@@ -46,6 +50,7 @@ public class HeroMelee : MonoBehaviour
             if (collider.tag == "Enemy")
             {
                 collider.GetComponent<EnemyController>().Hurt(damage);
+                PowerBarGrow();
             }
         }
     }
@@ -57,5 +62,17 @@ public class HeroMelee : MonoBehaviour
             return;
         }
         Gizmos.DrawWireSphere(contactPoint.transform.position, attackRange);
+    }
+
+    private void PowerBarGrow()
+    {
+        if (powerBar.localScale.x <= parentPowerBar.localScale.x)
+            powerBar.localScale += new Vector3(parentPowerBar.localScale.x * powerBarGrowRate, parentPowerBar.localScale.y * powerBarGrowRate, 0f);
+
+    }
+
+    private void PowerBarReset()
+    {
+        powerBar.localScale = new Vector3(0f, 0f, 0f);
     }
 }
