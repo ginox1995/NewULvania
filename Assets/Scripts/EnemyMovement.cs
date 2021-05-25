@@ -28,7 +28,7 @@ public class EnemyMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         slider = transform.Find("Canvas").Find("Healthbar").GetComponent<Slider>();
-        slider.maxValue =  health;
+        slider.maxValue =health;
         slider.minValue = 0f;
         slider.value = health;
     }

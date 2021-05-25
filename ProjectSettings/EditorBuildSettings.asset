@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Gothicvania Cemetery Artwork/Scenes/MainScene.unity
+    path: "Assets/Gothicvania Cemetery Artwork/Scenes/Men\xFA.unity"
+    guid: da189cd366a20c34da46400290548d54
+  - enabled: 1
+    path: Assets/Gothicvania Cemetery Artwork/Scenes/Opctions.unity
+    guid: 7c678430dbf4a8b42ac4e9cd8649214f
+  - enabled: 1
+    path: Assets/Gothicvania Cemetery Artwork/Scenes/Escena1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

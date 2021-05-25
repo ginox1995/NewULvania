@@ -613,7 +613,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -2.9961195, y: -1.09, z: -10}
+=======
+  m_LocalPosition: {x: -2.9876368, y: -1.09, z: -10}
+>>>>>>> dobleSalto
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3250,7 +3254,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574125223}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -2.9961195, y: -1.09, z: -10}
+=======
+  m_LocalPosition: {x: -2.9876368, y: -1.09, z: -10}
+>>>>>>> dobleSalto
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1107416278}
@@ -3274,7 +3282,11 @@ GameObject:
   - component: {fileID: 1736020919}
   - component: {fileID: 1736020920}
   m_Layer: 0
+<<<<<<< HEAD
   m_Name: Human
+=======
+  m_Name: Heros
+>>>>>>> dobleSalto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
