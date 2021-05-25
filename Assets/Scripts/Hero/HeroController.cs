@@ -10,30 +10,27 @@ namespace ULVania.Hero
 
         private HeroStateMachine fsm;
 
-        // States
+        //States
         private HeroState idleState;
         private HeroState runningState;
-
         private void Start()
         {
             fsm = new HeroStateMachine();
 
-            idleState = new IdleState(this, fsm);
+            idleState = new IdlState(this, fsm);
             runningState = new RunningState(this, fsm);
 
             fsm.Start(idleState);
-
         }
 
         public void Move()
         {
             fsm.ChangeState(runningState);
         }
-
         public void Stop()
         {
             fsm.ChangeState(idleState);
         }
     }
-
 }
+

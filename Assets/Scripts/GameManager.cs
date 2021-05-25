@@ -5,10 +5,13 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public Transform hero;
+    public Transform floor;
     public float heroSpeed;
     public float heroJumpSpeed;
     public float fallMultiplier;
     public float lowJumpMultiplier;
+    bool doubleJump=false;
+    float jumpCount = 0;
 
     public Transform spawnEnemyPosition;
     public Transform checkSpawnEnemy;
@@ -22,8 +25,7 @@ public class GameManager : MonoBehaviour
     //private bool isRunning = false;
     private float movement;
 
-    private bool enemyInstantiated = false;
-
+    private bool enemyInstantiated=false;
     void Start()
     {
         rbHero = hero.GetComponent<Rigidbody2D>();
@@ -36,13 +38,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hero.transform.position.x > checkSpawnEnemy.position.x && !enemyInstantiated)
+        if (hero.position.x > checkSpawnEnemy.position.x && enemyInstantiated==false)
         {
-            // Debemos spawnear un enemigo
-            Instantiate(prefabEnemy, spawnEnemyPosition.position, Quaternion.identity);
+            //Debemos spawnear enemigos
+            Instantiate(prefabEnemy, spawnEnemyPosition.position,Quaternion.identity);
             enemyInstantiated = true;
         }
-
         movement = Input.GetAxisRaw("Horizontal");
         if (movement < 0)
         {
@@ -54,11 +55,9 @@ public class GameManager : MonoBehaviour
                     contactPoint.localPosition.x * -1f,
                     contactPoint.localPosition.y,
                     contactPoint.localPosition.z
-                );
+                    );
             }
-            
-        }
-        else if (movement > 0)
+        }else if (movement > 0)
         {
             srHero.flipX = false;
             animmatorHero.SetBool("isRunning", true);
@@ -68,7 +67,7 @@ public class GameManager : MonoBehaviour
                     contactPoint.localPosition.x * -1f,
                     contactPoint.localPosition.y,
                     contactPoint.localPosition.z
-                );
+                    );
             }
         }
         else
@@ -81,16 +80,35 @@ public class GameManager : MonoBehaviour
         if (!IsJumping()) // puede ser un or (if (!isJumping() && !isJumping <--- no esta tan bien
         {
             animmatorHero.SetBool("isJumping", false);
+            jumpCount = 0;
+            
         }
-
-        if (!IsJumping() && Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            Jump();
+            if (!IsJumping())
+            {
+                Jump();
+                jumpCount += 1;
+                doubleJump = true;
+                Debug.Log("Primer salto");
+            }
+            else
+            {
+                if (doubleJump)
+                {
+                    Debug.Log("Doble salto");
+                    Jump();
+                    doubleJump = false;
+                    jumpCount += 1;
+                }
+            }
+            
         }
+        
         
         if (rbHero.velocity.y < 0)
         {
-            // Esta cayendo
+            // Esta cayendos
             rbHero.velocity += Vector2.up * Physics2D.gravity * (fallMultiplier - 1) * Time.deltaTime;
         }else if (rbHero.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
         {
@@ -110,11 +128,12 @@ public class GameManager : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(
             colliderHero.bounds.center,
             Vector2.down,
-            colliderHero.bounds.extents.y + 0.2f
+            colliderHero.bounds.extents.y + 0.3f
         );
 
         DebugJumpRay(hit);
 
+        
         return !hit;
     }
 
@@ -131,7 +150,7 @@ public class GameManager : MonoBehaviour
         }
 
         Debug.DrawRay(colliderHero.bounds.center,
-            Vector2.down * (colliderHero.bounds.extents.y + 0.2f),
+            Vector2.down * (colliderHero.bounds.extents.y + 0.3f),
             color);
     }
 }

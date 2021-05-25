@@ -21,7 +21,6 @@ namespace ULVania.Enemy
         public virtual void OnHandleInput() { }
         public virtual void OnLogicUpdate() { }
         public virtual void OnPhysicsUpdate() { }
-
     }
-
+    
 }

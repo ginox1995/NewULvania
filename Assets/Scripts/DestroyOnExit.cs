@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class DestroyOnExit : StateMachineBehaviour
 {
+    CapsuleCollider2D coll;
+    Rigidbody2D rbd;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-    //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        coll=animator.gameObject.GetComponent<CapsuleCollider2D>();
+        rbd = animator.gameObject.GetComponent<Rigidbody2D>();
+        coll.enabled = !coll.enabled;
+        rbd.gravityScale=0;
+        
+    }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     //override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

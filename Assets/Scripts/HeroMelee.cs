@@ -15,7 +15,7 @@ public class HeroMelee : MonoBehaviour
     [SerializeField]
     private int damage = 2;
 
-    public float rate = 1f;
+    private float rate = 0.5f;
     private float counter = 0f;
 
     private void Start()
@@ -26,7 +26,8 @@ public class HeroMelee : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && Time.time > counter)
+        
+        if (Input.GetMouseButtonDown(0) && Time.time>counter)
         {
             // Tenemos iniciar ataque
             Attack();
