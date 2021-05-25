@@ -16,18 +16,16 @@ namespace ULVania.Enemy
             speed = enemy.speed;
             slider = enemy.transform.Find("Canvas").Find("Healthbar").GetComponent<Slider>();
         }
-
         public override void OnLogicUpdate()
         {
             base.OnLogicUpdate();
             slider.value = enemy.Health;
         }
-
         public override void OnPhysicsUpdate()
         {
             base.OnPhysicsUpdate();
             rb.velocity = new Vector2(-speed, rb.velocity.y);
         }
     }
-
 }
+

@@ -14,12 +14,11 @@ namespace ULVania.Hero
             this.hero = hero;
             this.fsm = fsm;
         }
-
         public virtual void OnEnter() { }
         public virtual void OnExit() { }
         public virtual void OnHandleInput() { }
         public virtual void OnLogicUpdate() { }
         public virtual void OnPhysicsUpdate() { }
     }
-
 }
+

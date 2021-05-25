@@ -10,14 +10,12 @@ namespace ULVania.Enemy
         private Animator animator;
         private Rigidbody2D rb;
         private Slider slider;
-
         public DyingState(EnemyController enemy, EnemyStateMachine fsm) : base(enemy, fsm)
         {
             animator = enemy.GetComponent<Animator>();
             rb = enemy.GetComponent<Rigidbody2D>();
             slider = enemy.transform.Find("Canvas").Find("Healthbar").GetComponent<Slider>();
         }
-
         public override void OnEnter()
         {
             base.OnEnter();
@@ -26,5 +24,5 @@ namespace ULVania.Enemy
             rb.velocity = Vector2.zero;
         }
     }
-
 }
+

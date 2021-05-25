@@ -7,17 +7,16 @@ namespace ULVania.Enemy
     public class EnemyController : MonoBehaviour
     {
         public float speed;
-
+        [SerializeField]
         public int Health;
 
         private EnemyStateMachine fsm;
 
-        // States
+        //States
         private EnemyState spawningState;
         private EnemyState walkingState;
         private EnemyState dyingState;
-
-        void Start()
+        private void Start()
         {
             fsm = new EnemyStateMachine();
 
@@ -25,17 +24,17 @@ namespace ULVania.Enemy
             walkingState = new WalkingState(this, fsm);
             dyingState = new DyingState(this, fsm);
 
-            // Seteo estado inicial
+            //Seteo estado inicial
             fsm.Start(spawningState);
             fsm.ChangeState(walkingState);
         }
 
-        void FixedUpdate()
+        private void FixedUpdate()
         {
             fsm.GetCurrentState().OnPhysicsUpdate();
         }
 
-        void Update()
+        private void Update()
         {
             fsm.GetCurrentState().OnHandleInput();
             fsm.GetCurrentState().OnLogicUpdate();
@@ -50,6 +49,5 @@ namespace ULVania.Enemy
             }
         }
     }
-
 }
 

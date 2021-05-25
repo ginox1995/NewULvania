@@ -18,13 +18,12 @@ namespace ULVania.Hero
             currentState = initialState;
             currentState.OnEnter();
         }
-
         public void ChangeState(HeroState newState)
         {
             currentState.OnExit();
             currentState = newState;
             currentState.OnEnter();
         }
-
     }
 }
+

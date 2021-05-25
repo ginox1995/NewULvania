@@ -26,5 +26,5 @@ namespace ULVania.Enemy
             return currentState;
         }
     }
-
 }
+

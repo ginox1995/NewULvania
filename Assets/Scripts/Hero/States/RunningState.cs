@@ -11,9 +11,7 @@ namespace ULVania.Hero
 
         private float movement;
         private float speed;
-
-        public RunningState(HeroController hero, HeroStateMachine fsm) 
-            : base(hero, fsm)
+        public RunningState(HeroController hero, HeroStateMachine fsm) : base(hero, fsm)
         {
             rb = hero.GetComponent<Rigidbody2D>();
             animator = hero.GetComponent<Animator>();
@@ -47,5 +45,5 @@ namespace ULVania.Hero
             rb.velocity = new Vector2(movement * speed, rb.velocity.y);
         }
     }
-
 }
+
