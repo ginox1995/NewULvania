@@ -7,7 +7,11 @@ namespace ULVania.Hero
     public class TeleportState : HeroState
     {
         private Animator animator;
-        private Transform rb;
+        private Transform rbHero;
+        private Transform rbPowerBar;
+        private Transform rbPowerEnergy;
+        private SpriteRenderer srHero;
+
 
         private float teleportDistance;
         private float teleportEnergy;
@@ -16,9 +20,13 @@ namespace ULVania.Hero
         public TeleportState(HeroController hero, HeroStateMachine fsm) 
                 : base(hero, fsm)
             {
-                rb = GameObject.Find("Heros").transform;
+                Debug.Log("s");
+                rbHero = GameObject.Find("Heros").transform;
+                srHero = hero.GetComponent<SpriteRenderer>();
                 animator = hero.GetComponent<Animator>();
                 teleportDistance = hero.teleportDistance;
+                rbPowerBar = GameObject.Find("PowerBar").transform;
+                rbPowerEnergy = GameObject.Find("PowerEnergy").transform;
                 teleportEnergy = GameObject.Find("PowerBar").transform.localScale.x;
                 teleportEnergyRequired = GameObject.Find("PowerEnergy").transform.localScale.x;
             }
@@ -26,29 +34,26 @@ namespace ULVania.Hero
         // Start is called before the first frame update
         public override void OnEnter()
         {
-            animator.SetTrigger("teleport");
-        }
-
-
-        public override void OnHandleInput()
-        {
-            base.OnHandleInput();
-            teleportEnergy = Input.GetAxisRaw("Horizontal");
-        }
-
-        public override void OnLogicUpdate()
-        {
-            base.OnLogicUpdate();
-            if (teleportEnergy == teleportEnergyRequired)
+            if (teleportEnergy != teleportEnergyRequired)
             {
                 hero.Stop();
             }
+            else 
+            { 
+                animator.SetTrigger("teleport"); 
+            }
         }
 
+        /*public virtual void OnExit() 
+        { 
+            //teleportEnergy
+        }
+        */
         public override void OnPhysicsUpdate()
         {
             base.OnPhysicsUpdate();
-            rb = new Vector3(rb.transform.localPosition.x + teleportDistance, rb.transform.localPosition.y, 0f);
+            float flip = (srHero.flipX == false) ? 1f : -1f;
+            rbHero.position += new Vector3(teleportDistance * flip, 0f, 0f);
         }
 
     }

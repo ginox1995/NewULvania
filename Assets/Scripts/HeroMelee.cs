@@ -8,6 +8,9 @@ public class HeroMelee : MonoBehaviour
 {
     private Animator animator;
     private GameObject contactPoint;
+    public Transform powerEnergy;
+    public Transform powerBar;
+    public float powerBarGrowRate;
 
     [SerializeField]
     private float attackRange = 2f;
@@ -46,6 +49,7 @@ public class HeroMelee : MonoBehaviour
             if (collider.tag == "Enemy")
             {
                 collider.GetComponent<EnemyController>().Hurt(damage);
+                PowerEnergyGrow();
             }
         }
     }
@@ -57,5 +61,22 @@ public class HeroMelee : MonoBehaviour
             return;
         }
         Gizmos.DrawWireSphere(contactPoint.transform.position, attackRange);
+    }
+
+    private void PowerEnergyGrow()
+    {
+        if (1f - powerEnergy.localScale.x > powerBarGrowRate)
+        {
+            PowerEnergyBarGrow(powerBarGrowRate);
+        }
+        else
+        {
+            PowerEnergyBarGrow(1f - powerEnergy.localScale.x);
+        }
+    }
+    private void PowerEnergyBarGrow(float growRate)
+    {
+        powerEnergy.localScale += new Vector3(growRate, 0f, 0f);
+        powerEnergy.localPosition += new Vector3(growRate/2, 0f, 0f);
     }
 }

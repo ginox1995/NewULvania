@@ -7,6 +7,8 @@ TagManager:
   - ContactPoint
   - Enemy
   - GameMusic
+  - Ground
+  - Wall
   layers:
   - Default
   - TransparentFX

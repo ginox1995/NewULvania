@@ -20,7 +20,7 @@ namespace ULVania.Hero
         {
             fsm = new HeroStateMachine();
 
-            idleState = new IdlState(this, fsm);
+            idleState = new IdleState(this, fsm);
             runningState = new RunningState(this, fsm);
             teleportState = new TeleportState(this, fsm);
 

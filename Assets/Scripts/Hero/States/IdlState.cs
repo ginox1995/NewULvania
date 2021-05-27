@@ -26,6 +26,11 @@ namespace ULVania.Hero
             {
                 hero.Move();
             }
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                Debug.Log("teleport");
+                hero.Teleport();
+            }
         }
     }
 }

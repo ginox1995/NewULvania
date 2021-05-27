@@ -15,11 +15,11 @@ D:/Proyectos UnITY/NewULvania
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53461
+65374
 Successfully changed project path to: D:/Proyectos UnITY/NewULvania
 D:/Proyectos UnITY/NewULvania
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 44.22 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 47.37 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.5f1 (e2c53f129de5)
 [Subsystems] Discovering subsystems at path D:/opt/Unity/Hub/2020.2.5f1/Editor/Data/Resources/UnitySubsystems
@@ -35,97 +35,427 @@ Initialize mono
 Mono path[0] = 'D:/opt/Unity/Hub/2020.2.5f1/Editor/Data/Managed'
 Mono path[1] = 'D:/opt/Unity/Hub/2020.2.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/opt/Unity/Hub/2020.2.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56216
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/opt/Unity/Hub/2020.2.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001075 seconds.
+Registered in 0.001079 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 44.34 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 44.37 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.903 seconds
+- Completed reload, in  0.924 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003037 seconds.
+Registered in 0.002992 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 42.33 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 45.40 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.078 seconds
+- Completed reload, in  1.118 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2248 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 97.8 MB.
 System memory in use after: 97.9 MB.
 
 Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2687.
-Total: 2.231200 ms (FindLiveObjects: 0.253900 ms CreateObjectMapping: 0.141900 ms MarkObjects: 1.773200 ms  DeleteObjects: 0.060900 ms)
+Total: 2.800800 ms (FindLiveObjects: 0.290500 ms CreateObjectMapping: 0.281800 ms MarkObjects: 2.159000 ms  DeleteObjects: 0.068200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Gothicvania Cemetery Artwork/Scenes/Escena1.unity
-  artifactKey: Guid(de56c568c39e07c44ada249e715a6654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gothicvania Cemetery Artwork/Scenes/Escena1.unity using Guid(de56c568c39e07c44ada249e715a6654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a720e9c4ed6feb6f21dce452d23cc376') in 0.019001 seconds
-  Import took 0.022221 seconds .
+  path: Assets/Scripts/Hero
+  artifactKey: Guid(8430dc7434cd6544eaf0f6ac9cd9cd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Hero using Guid(8430dc7434cd6544eaf0f6ac9cd9cd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '470aa2cd0df9967dc681c42f5c76b44f') in 0.007615 seconds
+  Import took 0.112953 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 351.960031 seconds.
-  path: Assets/Gothicvania Cemetery Artwork
-  artifactKey: Guid(de9667d5c20bdec43b58327204afe72f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gothicvania Cemetery Artwork using Guid(de9667d5c20bdec43b58327204afe72f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae0b5fc478f870e23913dc1993ef743f') in 0.007789 seconds
-  Import took 0.011670 seconds .
+  Time since last request: 0.715281 seconds.
+  path: Assets/Scripts/GeneralManager
+  artifactKey: Guid(da118685e4c2bb94ca3d6e32d54854fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GeneralManager using Guid(da118685e4c2bb94ca3d6e32d54854fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb503076e7d771a549d2bffb57535622') in 0.005749 seconds
+  Import took 0.079999 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.431801 seconds.
-  path: Assets/Gothicvania Cemetery Artwork/Scenes
-  artifactKey: Guid(525c2f5d000154644a4f460728684ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gothicvania Cemetery Artwork/Scenes using Guid(525c2f5d000154644a4f460728684ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3a7035e5cd41feaffc3b933bccff9d7') in 0.007603 seconds
-  Import took 0.025999 seconds .
+  Time since last request: 1.692737 seconds.
+  path: Assets/Scripts/Hero/States
+  artifactKey: Guid(e2d39675eeefe8c43a7cfecfa0bf2841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Hero/States using Guid(e2d39675eeefe8c43a7cfecfa0bf2841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2e69b048fc041a15eaba9a4cc9eddb') in 0.020477 seconds
+  Import took 0.051943 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 20.346502 seconds.
-  path: Assets/Gothicvania Cemetery Artwork/Scenes/Escena1.unity
-  artifactKey: Guid(4701410af9955fd4d9abe92dde09aa4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gothicvania Cemetery Artwork/Scenes/Escena1.unity using Guid(4701410af9955fd4d9abe92dde09aa4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3aee1993840479261ebc1c791c1fa1b') in 0.003411 seconds
-  Import took 0.007585 seconds .
+  Time since last request: 34.405380 seconds.
+  path: Assets/Animations/Hero/Teleport.anim
+  artifactKey: Guid(e8275545626f7e7488e487f474a8d5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Hero/Teleport.anim using Guid(e8275545626f7e7488e487f474a8d5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82f40380c94a295549db8ccd380fab34') in 0.134123 seconds
+  Import took 0.154740 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000679 seconds.
-  path: Assets/Gothicvania Cemetery Artwork/Scenes/Escena1.unity
-  artifactKey: Guid(4701410af9955fd4d9abe92dde09aa4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gothicvania Cemetery Artwork/Scenes/Escena1.unity using Guid(4701410af9955fd4d9abe92dde09aa4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3aee1993840479261ebc1c791c1fa1b') in 0.001878 seconds
-  Import took 0.005249 seconds .
+  Time since last request: 11.113417 seconds.
+  path: Assets/Animations/Hero/HeroAnimationController.controller
+  artifactKey: Guid(2de29525b96060a438a1c8921472837e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Hero/HeroAnimationController.controller using Guid(2de29525b96060a438a1c8921472837e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac7c8951e2677f79e67b96c2a59dfa9') in 0.009827 seconds
+  Import took 0.041808 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 47.162217 seconds.
-  path: Assets/Gothicvania Cemetery Artwork/Scenes/MainScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gothicvania Cemetery Artwork/Scenes/MainScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80b68fb3877c3cfbc0368bd0523ed1fd') in 0.007594 seconds
-  Import took 0.010870 seconds .
+  Time since last request: 5.021722 seconds.
+  path: Assets/Animations/Hero/Run.anim
+  artifactKey: Guid(1911eb74b9a3e404f916796c373b35b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Hero/Run.anim using Guid(1911eb74b9a3e404f916796c373b35b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a654bbb978f5690bb55ee7398ec02774') in 0.006861 seconds
+  Import took 0.029494 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 40.808775 seconds.
-  path: Assets/Menu
-  artifactKey: Guid(af9efd4c4a28db643a0d86588f53ccb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Menu using Guid(af9efd4c4a28db643a0d86588f53ccb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034bff07702446943423de56d3671c40') in 0.006989 seconds
-  Import took 0.016781 seconds .
+  Time since last request: 101.880276 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-crouch/hero-crouch.png
+  artifactKey: Guid(28371f9328a2e48b796541177eb24014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-crouch/hero-crouch.png using Guid(28371f9328a2e48b796541177eb24014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '694308b408aa58341aa212f98e63e6ce') in 0.153492 seconds
+  Import took 0.177298 seconds .
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 7.737521 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-hurt/hero-hurt.png
+  artifactKey: Guid(e7c078d706e274250b9575d98a633383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-hurt/hero-hurt.png using Guid(e7c078d706e274250b9575d98a633383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07dec6b660bc0f19058e9acf7da8d780') in 0.031036 seconds
+  Import took 0.068076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.245444 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/skeleton
+  artifactKey: Guid(1af3bb645b64947fca82c4a0c9e368f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/skeleton using Guid(1af3bb645b64947fca82c4a0c9e368f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92a082d5109b18fede1dfa7a0e21495b') in 0.021569 seconds
+  Import took 0.034748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.224318 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-run/hero-run-1.png
+  artifactKey: Guid(3ab6c90b86c584ba9b2d3c294c0f18fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-run/hero-run-1.png using Guid(3ab6c90b86c584ba9b2d3c294c0f18fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '883fb12566d1394d0f0d858187a77f27') in 0.013447 seconds
+  Import took 0.017523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.844828 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-run/hero-run-2.png
+  artifactKey: Guid(2fdb114b59d5c44289ec0c7ab258979d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-run/hero-run-2.png using Guid(2fdb114b59d5c44289ec0c7ab258979d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e89e14081d91569f7631c1611b2f8f6') in 0.017637 seconds
+  Import took 0.032430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.320508 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-run/hero-run-3.png
+  artifactKey: Guid(c7050d8e26fb84052ac836ec92969c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-run/hero-run-3.png using Guid(c7050d8e26fb84052ac836ec92969c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e96bf957d5b405da9f7371954951885b') in 0.011418 seconds
+  Import took 0.035846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.294081 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-run/hero-run-4.png
+  artifactKey: Guid(85ec74a8412004e7bab3cb0f2699b342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-run/hero-run-4.png using Guid(85ec74a8412004e7bab3cb0f2699b342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6359a36dd66a9697fdb53e968295d35') in 0.018183 seconds
+  Import took 0.021967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.303958 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-run/hero-run-5.png
+  artifactKey: Guid(abacb267f8fce4ed589aef58e6cdfecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-run/hero-run-5.png using Guid(abacb267f8fce4ed589aef58e6cdfecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8365061b0863f7dc6dbcbf05b7ef312b') in 0.012149 seconds
+  Import took 0.016087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.342757 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-run/hero-run-6.png
+  artifactKey: Guid(a63af4d6a65b042e69387b3a6a5a576a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-run/hero-run-6.png using Guid(a63af4d6a65b042e69387b3a6a5a576a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7599128f8be0e83b8292f2e84e76bb9') in 0.030373 seconds
+  Import took 0.051339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.177655 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-idle/hero-idle-1.png
+  artifactKey: Guid(2e93c637a24e04d8ea6b2cfd9df53739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-idle/hero-idle-1.png using Guid(2e93c637a24e04d8ea6b2cfd9df53739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e7d1c1443ce23a4613555bc3dc4de5c') in 0.016530 seconds
+  Import took 0.075391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 111.093082 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-idle/hero-idle-4.png
+  artifactKey: Guid(0ac9ce5c9d1674e1980ff38feb6bc00d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-idle/hero-idle-4.png using Guid(0ac9ce5c9d1674e1980ff38feb6bc00d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d7e231ffd3bf3d2a3e857b3e7b6a68') in 0.021489 seconds
+  Import took 0.037727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.387145 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-idle/hero-idle-3.png
+  artifactKey: Guid(47b8aa1df122e423b8f0d752c67d1e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-idle/hero-idle-3.png using Guid(47b8aa1df122e423b8f0d752c67d1e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfcc6bebf51f30e75d0d212c7eacd281') in 0.018073 seconds
+  Import took 0.028616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.100875 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-jump/hero-jump-1.png
+  artifactKey: Guid(524b5c7e638cf48d3a4c0d3ede2f4768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-jump/hero-jump-1.png using Guid(524b5c7e638cf48d3a4c0d3ede2f4768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a822cd2f272dac5bcd730f42720f22') in 0.027316 seconds
+  Import took 0.043987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.296980 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-jump/hero-jump-2.png
+  artifactKey: Guid(fa30da05166464cc2b0a50c521d038aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-jump/hero-jump-2.png using Guid(fa30da05166464cc2b0a50c521d038aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf39f18fd9a5ebccb7054bfcb59337aa') in 0.013363 seconds
+  Import took 0.023380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.664269 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-jump/hero-jump-3.png
+  artifactKey: Guid(52d0963219cea42848f5d73f7d7dc411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-jump/hero-jump-3.png using Guid(52d0963219cea42848f5d73f7d7dc411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f132965cdc54f97e925a87c08469a307') in 0.023810 seconds
+  Import took 0.038260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.990398 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-jump/hero-jump-4.png
+  artifactKey: Guid(e24df99c276a946cdb2b9eced4636715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-jump/hero-jump-4.png using Guid(e24df99c276a946cdb2b9eced4636715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89881b16431aa6c103e889f220f12781') in 0.011720 seconds
+  Import took 0.022452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.546020 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-run
+  artifactKey: Guid(f8f34e68523994737a6e56ed1c5ae060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-run using Guid(f8f34e68523994737a6e56ed1c5ae060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a25cae27000d9e55efa591b89404c75') in 0.005945 seconds
+  Import took 0.038163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.737825 seconds.
+  path: Assets/Scripts/Hero/HeroController.cs
+  artifactKey: Guid(0c1b86a2ab373094ba598b16552115a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Hero/HeroController.cs using Guid(0c1b86a2ab373094ba598b16552115a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ed0fe73aef633ef01fbaff9993f8f75') in 0.055572 seconds
+  Import took 0.080557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.586462 seconds.
+  path: Assets/Scripts/Hero/States/IdlState.cs
+  artifactKey: Guid(3acd0b54b54279a46bfc77b7f80f1ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Hero/States/IdlState.cs using Guid(3acd0b54b54279a46bfc77b7f80f1ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ea41afea8657d8575b717bd5de31fc9') in 0.005644 seconds
+  Import took 0.031667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.051630 seconds.
+  path: Assets/Scripts/Hero/States/JumpingState.cs
+  artifactKey: Guid(90a83b141fb9aa0488f4df92c177a787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Hero/States/JumpingState.cs using Guid(90a83b141fb9aa0488f4df92c177a787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfc303ec97ba7de6ebda1250b77bd4d8') in 0.006674 seconds
+  Import took 0.010301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.597998 seconds.
+  path: Assets/Scripts/Hero/States/AttackingState.cs
+  artifactKey: Guid(869711356041f664592e42a41cb05d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Hero/States/AttackingState.cs using Guid(869711356041f664592e42a41cb05d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c97a9d41edf1d80ce82bfa961620294e') in 0.006674 seconds
+  Import took 0.031404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.045480 seconds.
+  path: Assets/Scripts/Hero/States/TeleportState.cs
+  artifactKey: Guid(d3c9cc2c2e1e8da48a66dbb5b3967c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Hero/States/TeleportState.cs using Guid(d3c9cc2c2e1e8da48a66dbb5b3967c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39b7491f24dbdb8ef67036d71b584658') in 0.005764 seconds
+  Import took 0.022078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001725 seconds.
+  path: Assets/Scripts/Hero/States/TeleportState.cs
+  artifactKey: Guid(d3c9cc2c2e1e8da48a66dbb5b3967c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Hero/States/TeleportState.cs using Guid(d3c9cc2c2e1e8da48a66dbb5b3967c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39b7491f24dbdb8ef67036d71b584658') in 0.001793 seconds
+  Import took 0.005362 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002868 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.971 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2237 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.4 MB.
+System memory in use after: 100.6 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2698.
+Total: 2.009900 ms (FindLiveObjects: 0.189700 ms CreateObjectMapping: 0.092600 ms MarkObjects: 1.710800 ms  DeleteObjects: 0.016000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.129272 seconds.
+  path: Assets/Scripts/Hero/States/RunningState.cs
+  artifactKey: Guid(8cac7b9fe023bc141a41b485c14cbacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Hero/States/RunningState.cs using Guid(8cac7b9fe023bc141a41b485c14cbacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05de7e7934c081a283406df0884fe5a4') in 0.009829 seconds
+  Import took 0.023183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.549142 seconds.
+  path: Assets/Scripts/Hero/HeroState.cs
+  artifactKey: Guid(cadaf917d308c3a438886dab1c646bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Hero/HeroState.cs using Guid(cadaf917d308c3a438886dab1c646bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b91d9872329e3bd08fc10c31741fd9d3') in 0.005466 seconds
+  Import took 0.033004 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 926.576941 seconds.
+  path: Assets/Scripts/Hero/HeroStateMachine.cs
+  artifactKey: Guid(be01adde183360f4196dd381bd52daf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Hero/HeroStateMachine.cs using Guid(be01adde183360f4196dd381bd52daf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44926ca747338ae434fa41d506f36ee8') in 0.006032 seconds
+  Import took 0.030242 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003004 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.963 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2237 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.5 MB.
+System memory in use after: 100.6 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2702.
+Total: 2.193900 ms (FindLiveObjects: 0.200700 ms CreateObjectMapping: 0.121100 ms MarkObjects: 1.854600 ms  DeleteObjects: 0.016700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002897 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.950 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2237 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.5 MB.
+System memory in use after: 100.6 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2706.
+Total: 2.131000 ms (FindLiveObjects: 0.192200 ms CreateObjectMapping: 0.094500 ms MarkObjects: 1.826000 ms  DeleteObjects: 0.017500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 451.493908 seconds.
+  path: Assets/Scripts/GameManager.cs
+  artifactKey: Guid(e3958e7473107014a9cd43a6b460ff93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager.cs using Guid(e3958e7473107014a9cd43a6b460ff93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67bea9af1f1c2b49d12466a2a4b8e59') in 0.008172 seconds
+  Import took 0.036339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.599923 seconds.
+  path: Assets/Scripts/HeroMelee.cs
+  artifactKey: Guid(071d350982a8d9240b0aab34fe1e569f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/HeroMelee.cs using Guid(071d350982a8d9240b0aab34fe1e569f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '377a40f5976dead3d496270914bf3782') in 0.005705 seconds
+  Import took 0.027703 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003062 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.955 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2237 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.6 MB.
+System memory in use after: 100.7 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2710.
+Total: 2.196000 ms (FindLiveObjects: 0.207800 ms CreateObjectMapping: 0.092900 ms MarkObjects: 1.878500 ms  DeleteObjects: 0.015800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002919 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.962 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2237 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.5 MB.
+System memory in use after: 100.7 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2714.
+Total: 2.215400 ms (FindLiveObjects: 0.210100 ms CreateObjectMapping: 0.099700 ms MarkObjects: 1.875800 ms  DeleteObjects: 0.028900 ms)
+
