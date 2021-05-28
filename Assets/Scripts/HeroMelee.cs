@@ -43,7 +43,7 @@ public class HeroMelee : MonoBehaviour
             contactPoint.transform.position, attackRange);
         foreach(Collider2D collider in colliders)
         {
-            if (collider.tag == "Enemy")
+            if (collider.tag == "Enemy" || collider.tag=="Boss")
             {
                 collider.GetComponent<EnemyController>().Hurt(damage);
             }

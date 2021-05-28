@@ -18,6 +18,7 @@ namespace ULVania.Enemy
         }
         public override void OnEnter()
         {
+            
             base.OnEnter();
             slider.value = 0f;
             animator.SetTrigger("destroy");
