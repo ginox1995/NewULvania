@@ -90,13 +90,13 @@ public class GameManager : MonoBehaviour
                 Jump();
                 jumpCount += 1;
                 doubleJump = true;
-                Debug.Log("Primer salto");
+                //Debug.Log("Primer salto");
             }
             else
             {
                 if (doubleJump)
                 {
-                    Debug.Log("Doble salto");
+                    //Debug.Log("Doble salto");
                     Jump();
                     doubleJump = false;
                     jumpCount += 1;

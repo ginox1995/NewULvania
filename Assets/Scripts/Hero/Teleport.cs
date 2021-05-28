@@ -23,8 +23,20 @@ public class Teleport : MonoBehaviour
             animator.SetTrigger("teleport");
             float flip = (srHero.flipX == false) ? 1f : -1f;
             hero.position += new Vector3(teleportDistance * flip, 0f, 0f);
+            if (teleportCollition()) 
+            {
+                animator.SetTrigger("die");
+            }
             PowerBarReset(); 
         }
+    }
+
+    public bool teleportCollition()
+    {
+        bool collition = false;
+        collition = Physics2D.IsTouching(hero.GetComponent<CapsuleCollider2D>(), GameObject.FindGameObjectsWithTag("Wall").GetComponent<TilemapCollider2D>()) &&
+           Physics2D.IsTouching(hero.GetComponent<CapsuleCollider2D>(), GameObject.FindGameObjectsWithTag("Fall").GetComponent<TilemapCollider2D>()); 
+        return collition;
     }
 
     public void PowerBarReset()

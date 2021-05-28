@@ -12600,8 +12600,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783954160}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2009204150}
   m_RootOrder: 0
@@ -13110,6 +13110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2009204150}
   - component: {fileID: 2009204151}
+  - component: {fileID: 2009204152}
   m_Layer: 0
   m_Name: HealtBar
   m_TagString: Untagged
@@ -13183,6 +13184,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2009204152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009204149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66096b60b30fe934e86f4010fba65999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colliderHero: {fileID: 1736020917}
+  powerEnergy: {fileID: 1783954161}
+  powerBar: {fileID: 2009204150}
+  healEnergy: {fileID: 1783954162}
+  damage: 0.15
+  damagedRate: 3
 --- !u!1 &2019817950
 GameObject:
   m_ObjectHideFlags: 0
