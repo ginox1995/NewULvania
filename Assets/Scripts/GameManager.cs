@@ -13,9 +13,13 @@ public class GameManager : MonoBehaviour
     bool doubleJump=false;
     float jumpCount = 0;
 
-    public Transform spawnEnemyPosition;
-    public Transform checkSpawnEnemy;
+    public Transform[] spawnEnemyPosition;
+    public Transform[] checkSpawnEnemy;
+    public Transform[] spawnEnemyPosition2;
+    public Transform[] checkSpawnEnemy2;
     public GameObject prefabEnemy;
+    public GameObject prefabGhost;
+
 
     Rigidbody2D rbHero;
     Animator animmatorHero;
@@ -25,7 +29,8 @@ public class GameManager : MonoBehaviour
     //private bool isRunning = false;
     private float movement;
 
-    private bool enemyInstantiated=false;
+    public bool[] enemyInstantiated;
+    public bool[] ghostInstantiated;
     void Start()
     {
         rbHero = hero.GetComponent<Rigidbody2D>();
@@ -38,11 +43,22 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hero.position.x > checkSpawnEnemy.position.x && enemyInstantiated==false)
+        for (int i = 0; i < checkSpawnEnemy.Length; i++)
         {
-            //Debemos spawnear enemigos
-            Instantiate(prefabEnemy, spawnEnemyPosition.position,Quaternion.identity);
-            enemyInstantiated = true;
+            if (hero.position.x > checkSpawnEnemy[i].position.x && enemyInstantiated[i]==false)
+            {
+                //Debemos spawnear enemigos
+                Instantiate(prefabEnemy, spawnEnemyPosition[i].position,Quaternion.identity);
+                enemyInstantiated[i] = true;
+            }
+        }
+        for (int i = 0; i < checkSpawnEnemy2.Length; i++)
+        {
+            if (hero.position.x > checkSpawnEnemy2[i].position.x && ghostInstantiated[i]==false)
+            {
+                Instantiate(prefabGhost, spawnEnemyPosition2[i].position, Quaternion.identity);
+                ghostInstantiated[i] = true;
+            }
         }
         movement = Input.GetAxisRaw("Horizontal");
         if (movement < 0)
@@ -83,7 +99,7 @@ public class GameManager : MonoBehaviour
             jumpCount = 0;
             
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) )
         {
             if (!IsJumping())
             {
